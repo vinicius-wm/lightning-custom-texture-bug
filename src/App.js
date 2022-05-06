@@ -76,24 +76,44 @@ export default class MyApp extends Lightning.Application {
                 children: [
                     {
                         x: 0,
-                        y: 0,
+                        y: 10,
                         texture: {type: IconTexture, w: 24, h: 24, src: activity}
                     },
                     {
                         x: 0,
-                        y: 48,
+                        y: 54,
+                        texture: Lightning.Tools.getSvgTexture(activity, 24, 24)
+                    },
+                    {
+                        x: 48,
+                        y: 10,
                         texture: {type: IconTexture, w: 24, h: 24, src: alignCenter}
                     },
                     {
-                        x: 0,
-                        y: 96,
+                        x: 48,
+                        y: 54,
+                        texture: Lightning.Tools.getSvgTexture(alignCenter, 24, 24)
+                    },
+                    {
+                        x: 96,
+                        y: 10,
                         texture: {type: IconTexture, w: 24, h: 24, src: alertCircle}
                     },
                     {
-                        x: 0,
-                        y: 144,
+                        x: 96,
+                        y: 54,
+                        texture: Lightning.Tools.getSvgTexture(alertCircle, 24, 24)
+                    },
+                    {
+                        x: 144,
+                        y: 10,
                         texture: {type: IconTexture, w: 24, h: 24, src: airplay}
-                    }
+                    },
+                    {
+                        x: 144,
+                        y: 54,
+                        texture: Lightning.Tools.getSvgTexture(airplay, 24, 24)
+                    },
                 ]
             }
         }
